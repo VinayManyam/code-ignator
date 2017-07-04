@@ -31,6 +31,8 @@ $ci->email->from('replay@gmail.com', 'Blabla');
 $ci->email->to('destination@gmail.com');
 $ci->email->subject('This is an email test');
 $ci->email->message('hithis is email testing 2');
+	//$this->email->message($this->load->view('verify',$str, true));loading view in massage inbox//
+	
 $res=$ci->email->send();
 if($res){
     echo "sent successfully";
